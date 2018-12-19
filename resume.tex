@@ -1,0 +1,232 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\usepackage{multicol}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Akash}{Singh}
+% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{AE-108 Avantika, Ghaziabad, Uttar Pradesh, 201002}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% \phone[mobile]{909-839-3097}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+% \email{xpan1@swarthmore.edu}                               % optional, remove / comment the line if not wanted
+% \homepage{shawnpan.me}                         % optional, remove / comment the line if not wanted
+% \extrainfo{}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+  
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{1.1\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{1.1\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{11pt}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace*{-23mm}
+
+\begin{center}
+\begin{tabular}{c c c c}
+\faLinkedin\enspace akash-singh-0710& \faEnvelopeO\enspace akashsingh0710@gmail.com & \faGithub\enspace akashsingh0710 & \faMobile\enspace +91-8285522389\\  
+\end{tabular}
+\end{center}
+
+\section{EDUCATION}
+{\customcventry{Completion Year: 2018}{B.Tech in Mechanical Engineering CPI: 7/10}{Indian Institute of Technology Kanpur}{Kanpur, Uttar Pradesh}{}{}}
+
+
+
+{\customcventry{Completion Year: 2014}{Intermediate(CBSE)     Percentage: 93.2}{K.D.B. Public School}{Ghaziabad, Uttar Pradesh}{}{}}
+
+
+{\customcventry{Completion Year: 2012}{High School(CBSE)   CGPA: 9.6/10}{K.D.B. Public School}{Ghaziabad, Uttar Pradesh}{}{}}
+
+
+
+\section{ CERTIFICATIONS}
+
+{\customcventry{Dec 2018}{5-course specialization by deeplearning.ai}{Deep Learning Specializtion }{Coursera}{}
+{\begin{itemize}
+  \item Neural Networks and Deep Learning
+  \item Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
+  \item Structuring Machine Learning Projects
+  \item Convolutional Neural Networks
+  \item Sequence Models
+\end{itemize}
+}
+
+{\customcventry{Aug 2018}{Stanford University}{Machine Learning}{Coursera}{}
+{}
+
+
+{\customcventry{Oct 2018}{University of Pennsylvania}{Robotics: Perception}{Coursera}{}
+{}
+
+
+
+
+
+
+
+
+\section{ACHIEVEMENTS}
+\begin{minipage}{1.15\maincolumnwidth}%
+	\small{
+    	\begin{itemize}
+          \item Awarded ‘The Proficiency Medal’ at 51st convocation by Shri R.C. Bhargava (Chairman, Board of Governors, IIT Kanpur) for best undergraduate project work done by graduating students in the 4-year/5-year UG-programme for the year 2018
+          \item Awarded 'Full-Fee Waiver Scholarship' for 2 years  based on High-School merit
+          \item Reached finals of Axis Bank AI Challenge 2018 Hackathon with 7 other teams from 3105 teams registered
+          \end{itemize}}%
+\end{minipage}%
+      
+
+
+\section{EXPERIENCE}
+
+{\customcventry{June 2018 - Sep 2018}{Graduate Engineer Trainee}{Amway India Manufacturing Plant}{Dindigul, Tamil Nadu}{}
+{\begin{itemize}
+  \item Improved the efficiency of HVAC system by integrating the Cooling Towers with Boilers using a Heat-Pump
+  \item Estimated to save 20\% of the energy consumed annualy i.e. around 20 Lakhs INR
+\end{itemize}
+}
+
+{\customcventry{May 2017 – July 2017}{Production Engineer Intern}{Hero MotoCorp Manufacturing Plant}{Gurugram, Haryana}{}
+{\begin{itemize}
+  \item Generated a dataset of the parts required and the operations used in each sub-assembly process of different motorcycle models
+  \item Built a User Interface using VBA to consolidate each subassembly process having a brief description of common operation sequence with images of the process and common parts description 
+\end{itemize}
+}
+
+
+
+
+
+\section{SELECTED PROJECTS}
+
+{\customcvproject{Table Reading \& Understanding in Documents/Images}{Oct 2018 - Dec 2018}
+{\begin{itemize}
+    \item Built an unsupervised learning model which defines the phsical and logical structure of tables
+    \item The input to the model are multiplte PDF/DOC/IMAGE files and output is an excel file corresponding to each input file containing all the tables detected from the input files
+    \item Built a user-interface by creating a local WordPress site using XAMPP to run all required cgi-python scripts 
+  \end{itemize}
+}
+
+{\customcvproject{Amazing Project 2}{Feb 2016 – May 2017}
+{\begin{itemize}
+  \item Began a group to create the first 36 hour student-run hackathon ever held at Illinois
+  \item Led 50 staff to raise \$175,000 for HackIllinois, managing relationships with 60+ sponsors
+  \item Plan events to increase social interaction among ACM members, as well as events to foster the spirit of computer science at Illinois
+\end{itemize}
+}
+
+
+
+{\customcvproject{Amazing Project 3}{Jan 2015 – May 2015}
+{\begin{itemize}
+  \item Assist in recruiting potential and admitted students to the UIUC computer science program
+  \item Attend information sessions, admitted student Q\&A’s, and student lunches to generate interest in the Illinois Computer Science department
+\end{itemize}
+}
+}
+
+
+
+\section{ADDITIONAL}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+    	\begin{itemize}
+          \item Relevant Coursework: Data Structures and Algorithms, Natural Language Processing, Computer Systems, Databases, Computer Security, Abstract Algebra
+          \item President of XYZ Club, Public Relations Manager of Swarthmore QWE Club
+          \item Programming Languages: Python, C, C++, PHP, Java, HTML/CSS, Javascript, jQuery, NodeJS
+          \item Fluent in Gibberish, conversational in Nonsense
+		\end{itemize}}%
+\end{minipage}%
+      
+}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' 
+
+\end{document}
+
+
+%% end of file `template.tex'.
