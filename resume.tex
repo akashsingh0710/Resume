@@ -56,7 +56,7 @@
   
 \newcommand*{\customcventry}[7][.25em]{
   \begin{tabular}{@{}l} 
-    {\bfseries #4}
+    {\bfseries #4}\\
   \end{tabular}
   \hfill% move it to the right
   \begin{tabular}{l@{}}
@@ -71,7 +71,7 @@
   \end{tabular}
   \ifx&#7&%
   \else{\\%
-    \begin{minipage}{1.1\maincolumnwidth}%
+    \begin{minipage}{1.16\maincolumnwidth}%
       \small#7%
     \end{minipage}}\fi%
   \par\addvspace{#1}}
@@ -87,7 +87,7 @@
   \end{tabular}
   \ifx&#4&%
   \else{\\%
-    \begin{minipage}{1.1\maincolumnwidth}%
+    \begin{minipage}{1.16\maincolumnwidth}%
       \small#4%
     \end{minipage}}\fi%
   \par\addvspace{#1}}
@@ -101,23 +101,20 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\vspace*{-23mm}
+\vspace*{-22mm}
 
 \begin{center}
 \begin{tabular}{c c c c}
-\faLinkedin\enspace akash-singh-0710& \faEnvelopeO\enspace akashsingh0710@gmail.com & \faGithub\enspace akashsingh0710 & \faMobile\enspace +91-8285522389\\  
+\faLinkedin\enspace \href{https://www.linkedin.com/in/akash-singh-0710/}{akash-singh-0710}& \faEnvelopeO\enspace akashsingh0710@gmail.com & \faGithub\enspace \href{https://github.com/akashsingh0710/}{akashsingh0710} & \faMobile\enspace +91-8285522389\\  
 \end{tabular}
 \end{center}
 
 \section{EDUCATION}
-{\customcventry{Completion Year: 2018}{B.Tech in Mechanical Engineering CPI: 7/10}{Indian Institute of Technology Kanpur}{Kanpur, Uttar Pradesh}{}{}}
+{\customcventry{2018}{B.Tech in Mechanical Engineering CPI: 7/10}{Indian Institute of Technology Kanpur}{Kanpur, Uttar Pradesh}{}{}}
 
 
 
-{\customcventry{Completion Year: 2014}{Intermediate(CBSE)     Percentage: 93.2}{K.D.B. Public School}{Ghaziabad, Uttar Pradesh}{}{}}
-
-
-{\customcventry{Completion Year: 2012}{High School(CBSE)   CGPA: 9.6/10}{K.D.B. Public School}{Ghaziabad, Uttar Pradesh}{}{}}
+{\customcventry{ 2014}{Intermediate(CBSE)     Percentage: 93.2}{K.D.B. Public School}{Ghaziabad, Uttar Pradesh}{}{High School(CBSE)   CGPA: 9.6/10 \hspace{11.6cm} \textit{\normalsize{2012}}  }
 
 
 
@@ -152,7 +149,7 @@
 	\small{
     	\begin{itemize}
           \item Awarded ‘The Proficiency Medal’ at 51st convocation by Shri R.C. Bhargava (Chairman, Board of Governors, IIT Kanpur) for best undergraduate project work done by graduating students in the 4-year/5-year UG-programme for the year 2018
-          \item Awarded 'Full-Fee Waiver Scholarship' for 2 years  based on High-School merit
+          \item Awarded 'Full-Fee Waiver Scholarship' for a period of 2012 - 2014 by K.D.B. Public School based on High-School merit
           \item Reached finals of Axis Bank AI Challenge 2018 Hackathon with 7 other teams from 3105 teams registered
           \end{itemize}}%
 \end{minipage}%
@@ -161,17 +158,17 @@
 
 \section{EXPERIENCE}
 
-{\customcventry{June 2018 - Sep 2018}{Graduate Engineer Trainee}{Amway India Manufacturing Plant}{Dindigul, Tamil Nadu}{}
+{\customcventry{June - Sep 2018}{Graduate Engineer Trainee}{Amway India Manufacturing Plant}{Dindigul, Tamil Nadu}{}
 {\begin{itemize}
-  \item Improved the efficiency of HVAC system by integrating the Cooling Towers with Boilers using a Heat-Pump
+  \item Proposed an idea to improve the efficiency of HVAC system by integrating the Cooling Towers with Boilers using a Heat-Pump
   \item Estimated to save 20\% of the energy consumed annualy i.e. around 20 Lakhs INR
 \end{itemize}
 }
 
-{\customcventry{May 2017 – July 2017}{Production Engineer Intern}{Hero MotoCorp Manufacturing Plant}{Gurugram, Haryana}{}
+{\customcventry{May – July 2017}{Production Engineer Intern}{Hero MotoCorp Manufacturing Plant}{Gurugram, Haryana}{}
 {\begin{itemize}
-  \item Generated a dataset of the parts required and the operations used in each sub-assembly process of different motorcycle models
-  \item Built a User Interface using VBA to consolidate each subassembly process having a brief description of common operation sequence with images of the process and common parts description 
+  \item Generated a dataset of the parts required and the operations used in each sub-assembly process of all motorcycles
+  \item Developed a User Interface to consolidate different subassembly processes by analyzing the common features in different motorcycles 
 \end{itemize}
 }
 
@@ -181,42 +178,105 @@
 
 \section{SELECTED PROJECTS}
 
-{\customcvproject{Table Reading \& Understanding in Documents/Images}{Oct 2018 - Dec 2018}
+
+{\customcvproject{Face Recognition Application}{Dec 2018 (ongoing)}
 {\begin{itemize}
-    \item Built an unsupervised learning model which defines the phsical and logical structure of tables
-    \item The input to the model are multiplte PDF/DOC/IMAGE files and output is an excel file corresponding to each input file containing all the tables detected from the input files
-    \item Built a user-interface by creating a local WordPress site using XAMPP to run all required cgi-python scripts 
+  \item Developed a face recognition algorithm based on 2D-PCA giving 77\% accuracy on AR database
+  \item Designed an Apache Web Server to run the all required cgi-python scripts and uploaded our own database for face recognition
+  \item Developed a Unity based Windows platform application as user interface and synced it with the local server\\  \\  
+\end{itemize}
+}
+
+
+{ \customcvproject{Table Reading \& Understanding in Documents/Images}{Oct - Dec 2018}
+{\begin{itemize}
+    \item Developed an unsupervised learning model which defines the physical and logical structure of tables
+    \item The input to the model are PDF/DOC/IMAGE files and output is an excel file corresponding to each input file containing all the tables detected from the input files
+    \item Built a user-interface by creating a local WordPress site using XAMPP to run all required cgi-python scripts
+    \item Achieved 90\% accuracy on table detection and 70\% accuracy while table extraction 
   \end{itemize}
 }
 
-{\customcvproject{Amazing Project 2}{Feb 2016 – May 2017}
+
+
+
+
+{\customcvproject{Line Following Maze Solving Robot |Robotics Club:}{May – July 2015}
 {\begin{itemize}
-  \item Began a group to create the first 36 hour student-run hackathon ever held at Illinois
-  \item Led 50 staff to raise \$175,000 for HackIllinois, managing relationships with 60+ sponsors
-  \item Plan events to increase social interaction among ACM members, as well as events to foster the spirit of computer science at Illinois
-\end{itemize}
-}
-
-
-
-{\customcvproject{Amazing Project 3}{Jan 2015 – May 2015}
-{\begin{itemize}
-  \item Assist in recruiting potential and admitted students to the UIUC computer science program
-  \item Attend information sessions, admitted student Q\&A’s, and student lunches to generate interest in the Illinois Computer Science department
+  \item Built a robot which detected the path via Infrared Sensor Array and used PID controller for smooth maneuvering 
+  \item Used Left Straight Right (LSR) algorithm to trace the maze and to solve it via shortest path
 \end{itemize}
 }
 }
 
 
-
-\section{ADDITIONAL}
-\begin{minipage}{\maincolumnwidth}%
+\section{RELEVANT COURSES \& TECHNICAL SKILLS}
+\begin{minipage}{1.15\maincolumnwidth}%
 	\small{
     	\begin{itemize}
-          \item Relevant Coursework: Data Structures and Algorithms, Natural Language Processing, Computer Systems, Databases, Computer Security, Abstract Algebra
-          \item President of XYZ Club, Public Relations Manager of Swarthmore QWE Club
-          \item Programming Languages: Python, C, C++, PHP, Java, HTML/CSS, Javascript, jQuery, NodeJS
-          \item Fluent in Gibberish, conversational in Nonsense
+          \item \textbf{Relevant Coursework:}\\   \textbullet{}Advanced Calculus\hspace{0.4cm}  \textbullet{}Linear Algebra \& ODEs\hspace{0.4cm}  \textbullet{}Complex Variables\hspace{0.4cm} \textbullet{}Partial Differential Equations \hspace{0.8cm}\textbullet{}Robot Manipulators:Dynamics \& Control\hspace{1cm} \textbullet{}Vibration \& Control\hspace{1cm} \textbullet{}Speech Signal Processing \\ \textbullet{}Fundamental of Computing 
+          \item \textbf{Tools:}\\ \textbullet{}Python\hspace{0.3cm} 
+          \textbullet{}C\hspace{0.3cm} \textbullet{}MATLAB\hspace{0.3cm} \textbullet{}HTML/CSS\hspace{0.3cm} \textbullet{}Javascript\hspace{0.3cm} \textbullet{}\LaTeX\ \hspace{0.3cm}
+          \textbullet{}Arduino\hspace{0.3cm}
+          \textbullet{}SolidWorks\hspace{0.3cm}
+          \textbullet{}Unity
+		\end{itemize}}%
+\end{minipage}%
+
+
+\section{OTHER PROJECTS}
+\begin{minipage}{1.16\maincolumnwidth}%
+	\small{
+    	\begin{itemize}
+          \item \textbf{Manufacturing \& Designing:} \\    \textbullet{}Missile Launching Truck Model Prototype \begin{footnotesize}(Course Project – Manufacturing Processes I)  \hspace{1.8cm}  \textit{Aug – Nov 2015}\end{footnotesize}
+          
+          \textbullet{}Vulcan Gun Model Prototype \begin{footnotesize}{(Course Project – Manufacturing Processes II)}\hspace{3.5cm}  \textit{{Feb – Apr 2016}}\end{footnotesize}
+          
+          \textbullet{}Portable Cloth Dryer \begin{footnotesize}{(Course Project – New Product Design and Prototyping)} \hspace{3.4cm}  \textit{\footnotesize{Jan – Apr 2017}}\end{footnotesize}
+          
+          \textbullet{}The Elbow Engine \begin{footnotesize}{( B.Tech Undergraduate Project)}\hspace{6.2cm} \textit{\footnotesize{Aug 2017 – May 2018}}\end{footnotesize}
+    
+          \item \textbf{Designing :}\\
+          \textbullet{}Mechanical Wrist Watch Designing \begin{footnotesize}(Course Project - Engineering Graphics) 
+           \hspace{3.4cm} \textit{{Oct – Nov 2015}}\end{footnotesize}
+          
+          \textbullet{}Electric Vehicle Designing\begin{footnotesize} (Mentor: Prof. Ramprasad Potluri, Electrical Engineering Dept.,IITK)\hspace{0.6cm} \textit{\footnotesize{May – Jul 2016}}\end{footnotesize} 
+          
+          \textbullet{}Elevator System Designing \begin{footnotesize}(Course Project – Design of Machine Elements)\hspace{3.9cm} \textit{\footnotesize{Mar – Apr 2017}}\end{footnotesize}
+          
+           
+           
+           
+           \item \textbf{Encoding HOA with ACC} \begin{footnotesize}(Course Project - Speech Signal Processing)\hspace{4.2cm} \textit{Jan – Apr 2018}\end{footnotesize}\\
+           \textbullet Performed ambisonic encoding/decoding i.e. conversion between A-format, B-format and D-format signals
+		\end{itemize}}%
+\end{minipage}%
+
+
+\section{EXTRA CURRICULAR ACTIVITIES}
+\begin{minipage}{1.16\maincolumnwidth}%
+	\small{
+    	\begin{itemize}
+          \item \textbf{Assistant Manager, Robogames, Techkriti’16:} Organized and co-ordinated Zonals, National and International rounds with around 60, 40 and 5 participant teams respectively
+          \item \textbf {Secretary, Robogames, Techkriti’15:} Conducted the event International Autonomous Robotics Challenge (IARC) and managed around 50 participating teams
+          \item \textbf{Marketing Team (IITK Motor Sports, Society of Automotive Engineers):} Established an extensive database of companies and persuaded them for sponsorship and raised up to 6 lakhs worth
+          \item \textbf{Won Fine Arts Trophy in Galaxy’15} 
+               \begin{itemize} {Won 1st position for:}\hspace{0.4cm}
+              \textbullet Backdrop art drawing\hspace{0.4cm} 
+              \textbullet Hall Parade\hspace{0.4cm}                
+              \textbullet Street Art\hspace{0.4cm} 
+              \textbullet Merge It All event \\
+          Won 2nd position for making speed art event 
+           \end{itemize} 
+        \item \textbf{Constructed a remote controlled robot and air-plane: } Participated in Robotrix in Takneek'14 
+        
+        \item \textbf{Awarded certification by Science Olympiad Foundation for distinctive performance}: \\ \textbullet National Science Olympiad \hspace{0.7cm}\textbullet National Cyber Olympiad \hspace{0.7cm}\textbullet International Mathematics Olympiad
+        \item Participated in Marathon conducted by K.D.B. Public School for awareness to protect Heritage and Health 
+        \item Participated in Marathon organized by 50th Inter IIT Sports Meet for raising funds for Smile Foundation
+        \item Played Squash as a part of physical activity course (CPA) during 1st year
+        \item	Participated in the various sports event like wall climbing, volleyball, lawn tennis, badminton, carom, chess etc. in Josh’15
+
+        
 		\end{itemize}}%
 \end{minipage}%
       
